@@ -6,3 +6,19 @@ body{
 h1{
     color: red;
    }
+
+   .parent {
+       border: dashed red;
+       display:flex;
+       justify-content: space-evenly;
+       
+    }
+
+   .parent div{
+        width:25%;
+        border: dashed blue
+   }
+
+   .parent div img{
+       width:100%;
+   }
