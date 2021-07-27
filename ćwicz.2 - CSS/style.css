@@ -1,3 +1,4 @@
+/*upload1*/
 body{
     background-color: steelblue;
     
@@ -6,7 +7,7 @@ body{
 h1{
     color: red;
    }
-
+/*upload 2*/
    .parent {
        border: dashed red;
        display:flex;
@@ -15,10 +16,46 @@ h1{
     }
 
    .parent div{
+       background-color: yellow;
         width:25%;
         border: dashed blue
    }
 
    .parent div img{
+       background-color: yellow;
        width:100%;
    }
+/*ćwiczenie 3*/
+
+.content{
+    display: flex;
+    border: 2px red;
+    justify-content: center;
+    margin: 2px;
+    padding-top: 2%;
+}
+
+.content div{
+    border: 2px dashed yellow;
+    padding-top: 1px 5px 10px 20px;
+}
+
+.content img{
+    background-color: gray;
+    width:100%
+}
+
+.content .desc{
+    background-color: ghostwhite;
+    padding: 2% 2%;
+    
+}
+
+.footer {
+    background-color: chartreuse;
+    border: 2px dashed brown;
+    margin-top: 2%;
+    padding: 5% 2%;
+    text-align: center;
+    display: block;
+}
