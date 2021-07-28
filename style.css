@@ -1,0 +1,60 @@
+.static{
+    position:static;
+    border: dashed red;
+    background-color: red;
+}
+
+.sticky{
+    position:sticky;
+    top: 10px;
+    border: dashed blue;
+    background-color: turquoise;
+}
+
+.fixed{
+    position:fixed;
+    border: dashed green;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(69, 88, 69);
+    }
+
+.relative{
+    border: dashed orange;
+    height: 15vh;
+    display: flex;
+    background-color: indianred;
+    }
+
+.absolute{
+    position:absolute;
+    border: dashed white;
+    right: 0; 
+    bottom: 0;
+}
+
+.index: {
+    z-index: 1;
+}
+
+.media{
+    display: flex;
+    border: dashed orange;
+    height: 40vh;
+    background-color: orange;
+}
+
+@media(max-width: 550px){
+    .media{
+        background-color: yellowgreen;
+        display: block;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+}
