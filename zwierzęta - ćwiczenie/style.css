@@ -2,11 +2,20 @@ body*{
     border: 2px dashed red;
 }
 
+
 .static{
     border: 2px solid black;
     position: static;
     text-align: center;
     width: 50vh;
+}
+
+.content{
+    display: flex;
+    border: 2px red;
+    justify-content: center;
+    margin: 2px;
+    padding-top: 2%;
 }
 
 .sticky{
@@ -17,7 +26,7 @@ body*{
 }
 
 .flex-container{
-    position: relative;
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -27,7 +36,7 @@ body*{
 }
 
 .flexbox-item{
-    position: absolute;
+    position: relative;
     text-align: center;
     width: 20%;
     border: 2px solid orange;
@@ -51,7 +60,7 @@ body*{
     }
 
     @media(max-width:550px){
-        .media .flexbox-item {
+        .media {
             display: flex;
             background-color: cyan;
             text-align: center;
