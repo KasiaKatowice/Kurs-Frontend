@@ -1,75 +1,74 @@
-body*{
+body div{
     border: 2px dashed red;
-}
+   }
 
-
-.static{
-    border: 2px solid black;
-    position: static;
-    text-align: center;
-    width: 50vh;
-}
-
-.content{
-    display: flex;
-    border: 2px red;
-    justify-content: center;
-    margin: 2px;
-    padding-top: 2%;
-}
-
-.sticky{
-    width: 50vh;
-    position: sticky;
-    border: 2px solid black;
-    top: 10px;
-}
 
 .flex-container{
-    position: absolute;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2%;
-    background-color: orange;
-    
 }
 
-.flexbox-item{
-    position: relative;
-    text-align: center;
-    width: 20%;
-    border: 2px solid orange;
-    background-color: whitesmoke;
-    margin:5px;
-    padding: 5% 0 5% 0;
-    display: block;
-    left: 100px;
-    bottom: 0;
-    
+.flex-container div{
+    width: 40vw;
+    height: 40vw;
+    margin: 2%;
 }
 
-.fixed{
-    position: fixed;
-    border: 2px solid black;
-    background-color: chartreuse;
-    width: 50vh;
+.flex-container div .shower{
+    background-color: rgba(255, 255, 255, 0.815);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    opacity: 0;
+    transition: 1s;
+}
+
+.flex-container div .shower:active{
+    opacity: 0;
+    transition: 1s;
+}
+
+.flex-container div div{
+    display: flex;
+    border: 2px;
+    position: absolute;
+    margin: 0;
+    top: 0;
     left: 0;
-    height: 10vh;
-    bottom: 2px;
-    }
+    width: 100%;
+    height: 100%;
+}
 
-    @media(max-width:550px){
-        .media {
-            display: flex;
-            background-color: cyan;
-            text-align: center;
-            width: 40%;
-            border: 2px solid orange;
-            margin:5px;
-            padding: 5% 0 5% 0;
-        }
-    }
+
+.flex-container div :nth-child(1){
+    background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/lew.jpg?raw=true);
+    background-size: 100%;
+}
+
+.flex-container div :nth-child(2){
+    background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/nosorozec.jpg?raw=true);
+    background-size: 100%;
+}
+
+
+.flex-container div :nth-child(3){
+    background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/slon.jpg?raw=true);
+    background-size: 100%;
+}
+
+.flex-container div :nth-child(4){
+    background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/zebra.jpg?raw=true);
+    background-size: 100%;
+}
+
+
+
+
+
     
     
 
