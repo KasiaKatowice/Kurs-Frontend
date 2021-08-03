@@ -61,6 +61,7 @@ h2{
 .flexContainer div:nth-child(1) .img{
     background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/lew.jpg?raw=true);
     background-size: 100%;
+    width: 100%;
 }
 
 .flexContainer div:nth-child(2) .img{

@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(230, 206, 174);
+}
+
+a{
+    border: 2px dashed red;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
