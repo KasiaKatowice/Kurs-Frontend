@@ -3,11 +3,13 @@ body{
     background-image: url(../ćwicz.6-strona/spikes.png);
     }
 
-div{
-    position:sticky;
+.nav{
+    top: 0;
+    position: sticky;
     text-align: center;
     justify-content: center;
     text-decoration: none;
+    z-index: 1;
 }
 
 
