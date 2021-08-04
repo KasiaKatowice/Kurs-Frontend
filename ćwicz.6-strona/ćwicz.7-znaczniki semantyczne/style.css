@@ -1,0 +1,19 @@
+body{
+    background-color: beige;
+}
+
+header{
+    display: inline-flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+nav ul,li{
+    top: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    list-style-type: none;
+
+    
+   
+}
