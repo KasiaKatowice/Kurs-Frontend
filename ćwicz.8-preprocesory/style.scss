@@ -1,0 +1,60 @@
+%centered{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+body{
+    background-color: beige;
+}
+
+header{
+    border: 1px solid black;
+    padding: 2%;
+    margin: 2%;
+}
+
+body{
+    >section{
+        >header{
+            border: 2px dashed blue;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+body{
+    >section:nth-child(1){
+        border: 2px dashed red;
+        padding: 2%;
+        @extend:%centered;
+        flex-direction: row-reverse;
+        
+    }
+}
+
+body{
+    >section:nth-child(2){
+        border: 2px dashed yellow;
+        padding: 2%;
+        @extend:%centered;
+    }
+}
+
+section{
+    >article{
+        border: 2px dashed green;
+    }
+}
+
+footer{
+    
+        text-decoration: none;
+        background-color: black;
+        border: 2px red;
+    }
+}
+
+
+

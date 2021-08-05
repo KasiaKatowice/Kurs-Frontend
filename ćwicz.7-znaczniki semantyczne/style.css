@@ -88,8 +88,9 @@ aside{
     display: flex;
     position: fixed;
     right: 0;
-    top: 0;
+    top: 33;
     height: 33%;
+    border: 2 px solid black;
 }
 
 aside>ul>li{
