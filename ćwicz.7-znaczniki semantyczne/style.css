@@ -1,34 +1,100 @@
 body{
-    background-color: beige;
+    background-color: palegreen;
+}
+
+body>header{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
 }
 
 header{
-    border: 2px solid black;
+    border: 1px solid black;
     display: flex;
     text-align: center;
-    width: 50%;
 }
 
-nav{
-    display: block;
+header>*{
+    flex: 1;
 }
 
-ul{
+header>nav>ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+nav>ul>li{
+    padding: 2%;
+}
+
+.post>article{
+    background-color: rgba(255, 255, 0, 0.315);
+    padding: 2%;
+    padding-bottom: 0;
+    margin: 5px 5px;
+
+}
+
+.post>article>header>i{
+ 
+ margin: 0;
+ border: 2px solid black;
+ height: 50px;
+ width: 50px;
+ font-size: 30px;
  display: flex;
- list-style-type: none;
- right: 0;
+ justify-content: center;
+ align-items: center;
 }
 
-article{
-    border: 2px solid black;
-    width: 50%;
+.post>article>header>h3{
+    margin: 0;
 }
 
-section{
-    border: 1px solid black;
-    width: 50%;
+.post>article>section{
+padding: 2%;
+background-color: whitesmoke;
 }
 
-aside ul{
+.post .comment{
+    background-color: burlywood;
+    margin: 1% 0 0 4%;
+    padding-bottom: 2%;
+}
+
+.post>.comment>header>i{
+ 
+ margin: 0;
+ border: 2px solid black;
+ height: 50px;
+ width: 50px;
+ font-size: 30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.post>.comment>section{
+    border: 2px dashed red;
+    background-color: whitesmoke;
+}
+
+aside{
+    display: flex;
+    position: fixed;
     right: 0;
+    top: 0;
+    height: 33%;
+}
+
+aside>ul>li{
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
