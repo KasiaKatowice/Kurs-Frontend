@@ -1,4 +1,4 @@
-body > section:nth-child(1), body > section:nth-child(2), body main div, body section > header > article, body footer {
+body > section:nth-child(1), body > section:nth-child(2), body main div, body section > article, body footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,9 +13,12 @@ body > section:nth-child(1), body > section:nth-child(2), body main div, body se
 
 body {
   background-color: yellowgreen;
+  margin: 0;
+  padding: 0;
 }
 
 body header {
+  color: red;
   background-color: yellow;
   border: 1px solid black;
   padding: 2%;
@@ -32,15 +35,11 @@ body > section > header {
 }
 
 body > section > header > img {
-  width: 50px;
+  width: 30px;
 }
 
 body > section:nth-child(1) {
   padding: 2%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
   width: 50px;
 }
 
@@ -50,10 +49,10 @@ body > section:nth-child(2) {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  background-color: floralwhite;
 }
 
 body main {
-  background-color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,30 +63,58 @@ body main {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0;
-  margin: 0;
+  margin-left: 0;
+}
+
+body main div:nth-child(1) {
+  background-color: #ff1f1f;
+}
+
+body main div:nth-child(2) {
+  background-color: #ff3d3d;
+}
+
+body main div:nth-child(3) {
+  background-color: #ff5c5c;
+}
+
+body main div:nth-child(4) {
+  background-color: #ff7a7a;
+}
+
+body main div:nth-child(5) {
+  background-color: #ff9999;
+}
+
+body main div:nth-child(6) {
+  background-color: #ffb8b8;
 }
 
 body main div {
+  background-color: red;
   border: 1px solid black;
   width: 33%;
   height: 20vh;
-  padding: 0 2 0 2;
-  margin: 0 2 0 2;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 0;
+  margin: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 body main div > img {
-  width: 31px;
-  height: 34px;
+  max-width: 90%;
+  max-height: 90%;
   padding: 0;
 }
 
-body section > header > article {
+body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body section > article {
   border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -7,11 +7,16 @@
 $bgColor: yellowgreen;
 $border: 1px solid black;
 
+@mixin text ($color) {
+    color: red;
+}
+    
 body{
     background-color: $bgColor;
     margin: 0;
     padding: 0;
    header{
+        @include text(red);
         background-color: yellow;
         border: $border;
         padding: 2%;
@@ -40,7 +45,12 @@ body{
 
     }
     main{
-        background-color: ;
+        @for $div from 1 to 7{
+            div:nth-child(#{$div}){
+                background-color: lighten( red, 6*$div);
+            }
+            
+        }
         display: flex;
         flex-wrap: wrap;
         gap: 1%;
@@ -48,30 +58,35 @@ body{
         padding: 0;
         margin-left: 0;
         div{
+            background-color: red;
             border: $border;
             @extend %centered;
             width: 33%;
             height: 20vh;
             padding: 0;
             margin: 0;
-            justify-content: space-between;
+            // justify-content: space-between;
             align-items: center;
         >img{
-            width: 31px;
-            height: 34px;
+            max-width: 90%;
+            max-height: 90%;
+            
             padding: 0;
         }
      }
     }
     section{
+        display: flex;
         >header{
-    >article{
+        
+        }
+            >article{
         border: $border;
         @extend %centered;
         display: flex;
         text-align: center;
         }
-    }
+    
 }
     footer{
     color:inherit;
