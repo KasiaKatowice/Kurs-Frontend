@@ -16,6 +16,9 @@ body{
     margin: 0;
     padding: 0;
    header{
+       >h1{
+           text-align: center;
+       }
         @include text(red);
         background-color: yellow;
         border: $border;
@@ -70,7 +73,6 @@ body{
         >img{
             max-width: 90%;
             max-height: 90%;
-            
             padding: 0;
         }
      }
@@ -98,6 +100,13 @@ body{
     }
 }
 
+@media(max-width:720px){
+    body{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
 
 
 
